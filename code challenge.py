@@ -10,7 +10,7 @@ data = response.json()
 
 #creating json file for use later
 with open("sku_data.json", "w") as file:
-    json.dumps(data, file)
+    json.dump(data, file)
 
 # creating dataframe from json file
 df=pd.read_json('sku_data.json')
